@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PickOne</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="shortcut icon" href="img/favicon.png" >
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<script>
+function getVote(int) {
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("poll").innerHTML=xmlhttp.responseText;
+    }
+  }
+  xmlhttp.open("GET","inc.php?i="+int,true);
+  xmlhttp.send();
+}
+</script>
+</head>
+
+<body id="indexbody">
+<div id="logo">
+  <center>
+    <img src="img/final.png" width="400" height="150" alt="PickOne" />
+  </center>
+</div>
+<div class="container" id="poll">
+<center>
+  <button id="pickagirl" onClick="getVote(0)" class="foto_mina"> <img id="beginning" src="img/start.fw.png"/> </button>
+</center>
+</div>
+<div id="ranking">
+	<button onclick="window.open('ranking.html', '_self')" class="blank">
+        <img class="trofeu" src="img/icone-copo-dourado-vetor_23-2147494035 (1).fw.png" />
+    </button>
+</div>
+teste
+</body>
+</html>

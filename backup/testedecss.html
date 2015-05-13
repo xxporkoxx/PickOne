@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Universal vertical center with CSS</title>
+  <style>
+  #wrapper{
+	  display: table;
+	  height: 100%;
+	  #position: relative;
+	  overflow: hidden;
+	  }
+	#centro{
+		#position: absolute;
+		#top: 50%;
+		display: table-cell;
+		vertical-align:middle;
+	}
+	#teste{
+		#position: relative;
+		_top: -50%
+		}
+.greenBorder {
+	border: 1px solid green;
+} /* bordas para maior visibilidade do exemplo */
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+  </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  <center>
+  <body>
+  <div class="greenBorder" id="wrapper">
+  <div class="greenBorder" id="topo">
+  	<img src="../img/final.png"/>
+  </div>
+    <div id="centro" >
+      <div class="greenBorder" id="teste"> aqui texto<br>
+        aqui textot<br>
+        aqui mais conteúdo, de um banco de dados por exemplo<br>
+        tudo centrado na vertical </div>
+    </div>
+  </div>
+</body>
+</center>
+</html>

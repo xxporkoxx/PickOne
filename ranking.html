@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PickOne</title>
+<link rel="shortcut icon" href="img/favicon.png" >
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body id="rankbody" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script>
+    $(document).ready(function(){
+        if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+        } 
+        else {  // code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function() {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+              document.getElementById("lista").innerHTML=xmlhttp.responseText;
+            }
+        }
+      xmlhttp.open("GET","return-rank.php",true);
+      xmlhttp.send();               
+    
+    });
+  
+    function showrank(voto){
+        
+    }
+</script>
+<div id="logo">
+  <center>
+    <a href="Index.html">
+        <img src="img/final.png" width="400" height="150" alt="PickOne" />
+      </a>
+    </center>
+</div>
+    <div id="lista" class="row">
+    
+    </div>
+</body>
+</html>

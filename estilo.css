@@ -1,0 +1,107 @@
+/* CSS Document */
+#indexbody{
+    background-image: url('img/bg.fw.png');
+    background-repeat: repeat-x;
+	background-color: #D7D7D7;
+	position: fixed; 
+    overflow-y:hidden;
+    width: 100%;
+}
+
+#rankbody{
+    background-image: url('img/bg.fw.png');
+    background-repeat: repeat-x;
+	background-color: #D7D7D7;
+    width: 100%;
+}
+
+.div-foto-mina{
+    position: relative;
+    float: left;
+    margin-left: 10px;
+}
+
+.foto-ranking{
+	display: block;
+	margin: 0 auto;
+	min-width: auto;
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    border: 2px solid #dcdcdc;
+    position: relative;
+}
+
+.thumbnail{
+    max-height: 160px;
+    max-width: 160px; 
+}
+
+.envolvespaimg{
+    max-height: 150px;
+    max-width: 150px;    
+}
+
+.envolvespaimg span{
+    position: absolute;
+    top: 111px;
+    color:azure;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#ranking{
+	z-index:9;
+	position: absolute;
+	left:20px;
+	top:20px;
+}
+
+.blank{
+ 	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.foto_mina {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:transparent;
+	-webkit-border-top-left-radius:0px;
+	-moz-border-radius-topleft:0px;
+	border-top-left-radius:0px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:0px;
+	-moz-border-radius-bottomright:0px;
+	border-bottom-right-radius:0px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	border:1px solid #dcdcdc;
+}.foto_mina:active {
+	position:relative;
+	top:1px;
+}
+
+.foto_mina:hover{
+	-moz-box-shadow: 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 5px #fff;
+	box-shadow:0px 0px 10px 3px #DADADA;
+}
+
+.trofeu{
+	width:130px;
+	height:130px;
+	opacity:0.8;
+	}
+
+.reduzimg{
+	max-width:370px;
+	max-height:370px;
+}
